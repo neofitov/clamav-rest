@@ -27,7 +27,7 @@ public class Application {
 
   @Value("${clamd.maxrequestsize}")
   private String maxrequestsize;
-
+  
   @Bean
   MultipartConfigElement multipartConfigElement() {
     MultipartConfigFactory factory = new MultipartConfigFactory();
@@ -41,7 +41,7 @@ public class Application {
     Map<String, Object> defaults = new HashMap<String, Object>();
     defaults.put("clamd.host", "192.168.50.72");
     defaults.put("clamd.port", 3310);
-    defaults.put("clamd.timeout", 500);
+    defaults.put("clamd.timeout", 2000);
     defaults.put("clamd.maxfilesize", "20000KB");
     defaults.put("clamd.maxrequestsize", "20000KB");
     app.setDefaultProperties(defaults);

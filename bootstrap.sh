@@ -3,8 +3,8 @@ set -m
 
 host=${CLAMD_HOST:-192.168.50.72}
 port=${CLAMD_PORT:-3310}
-filesize=${MAXSIZE:-10GB} 
-timeout=${TIMEOUT:-500}
+filesize=${MAXSIZE:-100MB} 
+timeout=${TIMEOUT:-2000}
 
 echo "using clamd server: $host:$port"
 
